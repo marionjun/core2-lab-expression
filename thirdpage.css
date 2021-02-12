@@ -1,0 +1,75 @@
+
+@font-face {
+    font-family: "InriaSerif LightItalic";
+    src: url("./assets/InriaSerif-LightItalic.ttf") format("truetype");
+
+}
+@font-face {
+    font-family: "InriaSerif Regular";
+    src: url("./assets/InriaSerif-Regular.ttf") format("truetype");
+
+}
+@font-face {
+    font-family: "PlayfairDisplay Black";
+    src: url("./assets/PlayfairDisplay-Black.ttf") format("truetype");
+
+}
+body {
+    background-color: black;
+    animation-name: bgColor-time-change;
+  animation-duration: 5s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+  animation-delay: 5s;
+  }
+  
+
+
+p {
+    font-family: "InriaSerif LightItalic";
+    font-size: 30px;
+    color: white;
+}
+p:hover {
+    color: transparent;
+}
+h2 {
+    font-family: "InriaSerif Regular";
+    font-size: 40px;
+    color: white;  
+}
+div#wrapper {
+    width: 1070px;
+    margin-left: 100px;
+    padding: 80px 0;
+  }
+ 
+ 
+
+
+  .continue {
+      position:absolute;
+      right: 150px;
+      text-decoration: underline;
+  }
+  @keyframes bgColor-time-change {
+    0% {
+        background: url(./assets/background.jpg);
+    }
+    25% {
+        background: url(./assets/background.jpg);
+    }
+    50% {
+      background-color: black;
+    }
+    75% {
+      background-color: black;
+    }
+    100% {
+      background-color: black;
+    }
+  }
+
+
+ 
+  

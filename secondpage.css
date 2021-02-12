@@ -1,0 +1,120 @@
+@font-face {
+    font-family: "InriaSerif LightItalic";
+    src: url("./assets/InriaSerif-LightItalic.ttf") format("truetype");
+
+}
+@font-face {
+    font-family: "InriaSerif Regular";
+    src: url("./assets/InriaSerif-Regular.ttf") format("truetype");
+
+}
+@font-face {
+    font-family: "PlayfairDisplay Black";
+    src: url("./assets/PlayfairDisplay-Black.ttf") format("truetype");
+
+}
+body {
+    background: url(./assets/lalaland_top_bg.png);
+    background-color: black;
+  }
+  
+h1 {
+    font-family: "PlayfairDisplay Black";
+    font-size: 70px;
+    color: white;
+    margin-bottom: 80px;
+}
+
+p {
+    font-family: "InriaSerif LightItalic";
+    font-size: 30px;
+    color: white;
+    text-align: right;
+}
+div#wrapper {
+    width: 1070px;
+    margin-left: 250px;
+    padding: 90px 0;
+  }
+
+
+  .bold {
+    font-family: "InriaSerif Regular";
+    font-size: 40px;
+    color: white;
+    cursor: pointer;
+    animation: glow 2s linear infinite;
+  }
+  .love {
+    font-family: "InriaSerif Regular";
+    font-size: 40px;
+    color: pink;
+  }
+  .highlight:hover {
+      color: yellow;
+      text-shadow: 0px 0px 29px rgb(255, 230, 0);
+      cursor: pointer;
+  }
+  .continue {
+      position:absolute;
+      left: 150px;
+      text-decoration: underline;
+  }
+
+
+
+  @keyframes glow {
+    0% {
+      opacity:0.1;
+      text-shadow: 0px 0px 29px rgb(255, 230, 0);
+    }
+    
+    2% {
+      opacity:1;
+      text-shadow: 0px 0px 29px rgb(255, 230, 0);
+    }
+    8% {
+      opacity:0.1;
+      text-shadow: 0px 0px 29px rgb(255, 230, 0);
+    }
+    9% {
+      opacity:1;
+      text-shadow: 0px 0px 29px rgb(255, 230, 0);
+    }
+    12% {
+      opacity:0.1;
+      text-shadow: 0px 0px rgb(255, 230, 0);
+    }
+    20% {
+      opacity:1;
+      text-shadow: 0px 0px 29px rgb(255, 230, 0);
+    }
+    25% {
+      opacity:0.3;
+      text-shadow: 0px 0px 29px rgb(255, 230, 0);
+    }
+    30% {
+      opacity:1;
+      text-shadow: 0px 0px 29px rgb(255, 230, 0);
+    }
+    
+    70% {
+      opacity:0.7;
+      text-shadow: 0px 0px 29px rgb(255, 230, 0);
+    }
+    
+    72% {
+      opacity:0.2;
+      text-shadow:0px 0px 29px rgb(255, 230, 0);
+    }
+    
+    77% {
+      opacity:.9;
+      text-shadow: 0px 0px 29px rgb(255, 230, 0);
+    }
+    100% {
+      opacity:.9;
+      text-shadow: 0px 0px 29px rgb(255, 230, 0);
+    }
+  }
+  
