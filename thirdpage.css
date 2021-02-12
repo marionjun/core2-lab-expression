@@ -1,75 +1,93 @@
-
 @font-face {
-    font-family: "InriaSerif LightItalic";
-    src: url("./assets/InriaSerif-LightItalic.ttf") format("truetype");
-
+  font-family: "InriaSerif LightItalic";
+  src: url("./assets/InriaSerif-LightItalic.ttf") format("truetype");
 }
 @font-face {
-    font-family: "InriaSerif Regular";
-    src: url("./assets/InriaSerif-Regular.ttf") format("truetype");
-
+  font-family: "InriaSerif Regular";
+  src: url("./assets/InriaSerif-Regular.ttf") format("truetype");
 }
 @font-face {
-    font-family: "PlayfairDisplay Black";
-    src: url("./assets/PlayfairDisplay-Black.ttf") format("truetype");
-
+  font-family: "PlayfairDisplay Black";
+  src: url("./assets/PlayfairDisplay-Black.ttf") format("truetype");
 }
 body {
-    background-color: black;
-    animation-name: bgColor-time-change;
+  background-color: black;
+  animation-name: bgColor-time-change;
   animation-duration: 5s;
   animation-fill-mode: forwards;
   animation-iteration-count: infinite;
   animation-delay: 5s;
-  }
-  
-
+}
 
 p {
-    font-family: "InriaSerif LightItalic";
-    font-size: 30px;
-    color: white;
+  font-family: "InriaSerif LightItalic";
+  font-size: 30px;
+  color: white;
 }
 p:hover {
-    color: transparent;
+  color: transparent;
 }
 h2 {
-    font-family: "InriaSerif Regular";
-    font-size: 40px;
-    color: white;  
+  font-family: "InriaSerif Regular";
+  font-size: 40px;
+  color: white;
 }
 div#wrapper {
-    width: 1070px;
-    margin-left: 100px;
-    padding: 80px 0;
+  width: 1070px;
+  margin-left: 100px;
+  padding: 80px 0;
+}
+
+.continue {
+  position: absolute;
+  right: 150px;
+  text-decoration: underline;
+}
+@keyframes bgColor-time-change {
+  0% {
+    background: url(./assets/background.jpg);
   }
- 
- 
-
-
-  .continue {
-      position:absolute;
-      right: 150px;
-      text-decoration: underline;
+  25% {
+    background: url(./assets/background.jpg);
   }
-  @keyframes bgColor-time-change {
-    0% {
-        background: url(./assets/background.jpg);
-    }
-    25% {
-        background: url(./assets/background.jpg);
-    }
-    50% {
-      background-color: black;
-    }
-    75% {
-      background-color: black;
-    }
-    100% {
-      background-color: black;
-    }
+  50% {
+    background-color: black;
   }
+  75% {
+    background-color: black;
+  }
+  100% {
+    background-color: black;
+  }
+}
+/* Mobile */
+@media (max-width: 768px) {
+    p {
+        font-size: 18px;
+      }
+      div#wrapper {
+        width: 500px;
+        margin-left: 50px;
+        padding: 60px 0;
+      }
+      .continue {
+        right: 60px;
+      }
+}
 
-
- 
-  
+/* Tablet */
+@media (max-width: 1024px) {
+    p {
+        font-size: 23px;
+        color: white;
+      }
+    
+      div#wrapper {
+        width: 900px;
+        margin-left: 50px;
+        padding: 60px 0;
+      }
+      .continue {
+        right: 120px;
+      }   
+}

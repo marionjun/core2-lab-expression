@@ -1,104 +1,127 @@
 @font-face {
-    font-family: "InriaSerif LightItalic";
-    src: url("./assets/InriaSerif-LightItalic.ttf") format("truetype");
-
+  font-family: "InriaSerif LightItalic";
+  src: url("./assets/InriaSerif-LightItalic.ttf") format("truetype");
 }
 @font-face {
-    font-family: "InriaSerif Regular";
-    src: url("./assets/InriaSerif-Regular.ttf") format("truetype");
-
+  font-family: "InriaSerif Regular";
+  src: url("./assets/InriaSerif-Regular.ttf") format("truetype");
 }
 @font-face {
-    font-family: "PlayfairDisplay Black";
-    src: url("./assets/PlayfairDisplay-Black.ttf") format("truetype");
-
+  font-family: "PlayfairDisplay Black";
+  src: url("./assets/PlayfairDisplay-Black.ttf") format("truetype");
 }
 body {
-    background: url(./assets/bg2.jpg);
-    background-color: black;
-  }
-  
-
+  background: url(./assets/bg2.jpg);
+  background-color: black;
+}
 
 p {
-    font-family: "InriaSerif LightItalic";
-    font-size: 40px;
-    color: white;
-    text-align: center;
+  font-family: "InriaSerif LightItalic";
+  font-size: 40px;
+  color: white;
+  text-align: center;
 }
 div#wrapper {
-    width: 1070px;
- margin: 220px 180px;
-  }
-
-
-  .bold {
-    font-family: "InriaSerif Regular";
-    font-size: 50px;
-    color: white;
-    cursor: pointer;
-    animation: glow 2s linear infinite;
-  }
-  .highlight:hover {
-    color: yellow;
-    text-shadow: 0px 0px 29px rgb(255, 230, 0);
-    cursor: pointer;
+  width: 1070px;
+  margin: 220px 180px;
 }
 
+.bold {
+  font-family: "InriaSerif Regular";
+  font-size: 50px;
+  color: white;
+  cursor: pointer;
+  animation: glow 2s linear infinite;
+}
+.highlight:hover {
+  color: yellow;
+  text-shadow: 0px 0px 29px rgb(255, 230, 0);
+  cursor: pointer;
+}
 
-
-  @keyframes glow {
-    0% {
-      opacity:0.1;
-      text-shadow: 0px 0px 29px rgb(255, 230, 0);
-    }
-    
-    2% {
-      opacity:1;
-      text-shadow: 0px 0px 29px rgb(255, 230, 0);
-    }
-    8% {
-      opacity:0.1;
-      text-shadow: 0px 0px 29px rgb(255, 230, 0);
-    }
-    9% {
-      opacity:1;
-      text-shadow: 0px 0px 29px rgb(255, 230, 0);
-    }
-    12% {
-      opacity:0.1;
-      text-shadow: 0px 0px rgb(255, 230, 0);
-    }
-    20% {
-      opacity:1;
-      text-shadow: 0px 0px 29px rgb(255, 230, 0);
-    }
-    25% {
-      opacity:0.3;
-      text-shadow: 0px 0px 29px rgb(255, 230, 0);
-    }
-    30% {
-      opacity:1;
-      text-shadow: 0px 0px 29px rgb(255, 230, 0);
-    }
-    
-    70% {
-      opacity:0.7;
-      text-shadow: 0px 0px 29px rgb(255, 230, 0);
-    }
-    
-    72% {
-      opacity:0.2;
-      text-shadow:0px 0px 29px rgb(255, 230, 0);
-    }
-    
-    77% {
-      opacity:.9;
-      text-shadow: 0px 0px 29px rgb(255, 230, 0);
-    }
-    100% {
-      opacity:.9;
-      text-shadow: 0px 0px 29px rgb(255, 230, 0);
-    }
+@keyframes glow {
+  0% {
+    opacity: 0.1;
+    text-shadow: 0px 0px 29px rgb(255, 230, 0);
   }
-  
+
+  2% {
+    opacity: 1;
+    text-shadow: 0px 0px 29px rgb(255, 230, 0);
+  }
+  8% {
+    opacity: 0.1;
+    text-shadow: 0px 0px 29px rgb(255, 230, 0);
+  }
+  9% {
+    opacity: 1;
+    text-shadow: 0px 0px 29px rgb(255, 230, 0);
+  }
+  12% {
+    opacity: 0.1;
+    text-shadow: 0px 0px rgb(255, 230, 0);
+  }
+  20% {
+    opacity: 1;
+    text-shadow: 0px 0px 29px rgb(255, 230, 0);
+  }
+  25% {
+    opacity: 0.3;
+    text-shadow: 0px 0px 29px rgb(255, 230, 0);
+  }
+  30% {
+    opacity: 1;
+    text-shadow: 0px 0px 29px rgb(255, 230, 0);
+  }
+
+  70% {
+    opacity: 0.7;
+    text-shadow: 0px 0px 29px rgb(255, 230, 0);
+  }
+
+  72% {
+    opacity: 0.2;
+    text-shadow: 0px 0px 29px rgb(255, 230, 0);
+  }
+
+  77% {
+    opacity: 0.9;
+    text-shadow: 0px 0px 29px rgb(255, 230, 0);
+  }
+  100% {
+    opacity: 0.9;
+    text-shadow: 0px 0px 29px rgb(255, 230, 0);
+  }
+}
+/* Mobile */
+@media (max-width: 768px) {
+    p {
+        font-size: 18px;
+      }
+      div#wrapper {
+        width: 500px;
+        margin-left: 50px;
+        padding: 60px 0;
+      }
+      .bold {
+        font-size: 23px;
+      }
+}
+
+/* Tablet */
+@media (max-width: 1024px) {
+    p {
+        font-size: 33px;
+        color: white;
+      }
+    
+      div#wrapper {
+        width: 900px;
+        margin-left: 50px;
+        padding: 0px 0;
+      }
+      .bold {
+        font-size: 46px;
+      }
+    
+}
